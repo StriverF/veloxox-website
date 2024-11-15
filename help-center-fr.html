@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=icon href=/favicon.ico>
+    <title>Documentation d'aide - Velo Dash</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto auto 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            padding: 0px;
+            color: #999;
+        }
+
+        footer a {
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Documentation d'aide</h1>
+
+    <h2>Comment utiliser Velo Dash ?</h2>
+    <p>1. <strong>Ajouter une vidéo :</strong> Cliquez sur "Ajouter une vidéo" pour importer une vidéo depuis la galerie.</p>
+    <p>2. <strong>Importer des données de cyclisme :</strong> Cliquez sur n'importe quel onglet en bas pour importer des données de cyclisme (si des données sont déjà importées, cliquez pour ajouter les composants correspondants au tableau de bord de la vidéo).</p>
+    <p>3. <strong>Choisir des données de cyclisme :</strong> Sélectionnez pour importer des données depuis un fichier fit ou Apple Health (la synchronisation avec les comptes tiers est en développement).</p>
+    <p>4. <strong>Ajouter des composants :</strong> Choisissez les données du tableau de bord que vous souhaitez ajouter à la vidéo depuis les onglets inférieurs.</p>
+    <p>5. <strong>Agencement des composants :</strong> Déplacez les composants sur la vidéo en les faisant glisser ou en utilisant un geste de pincement pour les agrandir/réduire (les gestes peuvent être effectués dans toute la zone vidéo, pas seulement sur le composant sélectionné).</p>
+    <p>6. <strong>Alignement temporel :</strong> Vérifiez si l'alignement est automatique dans le premier onglet. Sinon, utilisez l'outil d'alignement de la ligne temporelle pour ajuster manuellement les données de cyclisme avec le temps de la vidéo (ajoutez un composant temporel ou un itinéraire à la vidéo, puis ajustez l'outil d'alignement pour trouver le moment correspondant).</p>
+    <p>7. <strong>Exporter la vidéo :</strong> Cliquez sur le bouton d'exportation en haut à droite pour sauvegarder la vidéo dans la galerie.</p>
+
+    <h2>Comment obtenir un fichier .fit avec des données de cyclisme ?</h2>
+    <p><strong>Compteur Garmin :</strong> Connectez-vous à <a href="https://connect.garmin.cn/modern/home" target="_blank">Garmin Connect</a>, cliquez sur les trois lignes en haut à gauche > Activités > Toutes les activités > Sélectionnez l'enregistrement à exporter > Cliquez sur l'engrenage > Exporter les données brutes > Téléchargez et enregistrez sur votre téléphone.</p>
+    <p><strong>Compteur Magene :</strong> Ouvrez l'application "Magene Utility", trouvez les données de cyclisme correspondantes, puis cliquez sur le bouton de partage en haut à droite sur la page des détails. Choisissez "Partager le fichier fit" dans les options de partage et enregistrez-le à l'emplacement souhaité.</p>
+    <p><strong>Autres compteurs :</strong> Contactez le support officiel de votre compteur pour connaître la méthode d'exportation des données de cyclisme.</p>
+    <p><strong>Partager un fichier fit pour ouvrir Velo Dash :</strong> Vous pouvez ouvrir des fichiers `.fit` dans Velo Dash en sélectionnant "Ouvrir avec une autre application" dans une conversation WeChat, puis en choisissant Velo Dash. Dans des applications de compteurs vélo comme OneLap Sports ou iGPSPORT, vous pouvez également partager des fichiers `.fit` directement vers Velo Dash pour importer les données correspondantes. De plus, vous pouvez ouvrir des fichiers `.fit` directement depuis l'application Fichiers pour lancer Velo Dash et importer les données.</p>
+
+    <h2>Comment sauvegarder une disposition personnalisée du tableau de bord ?</h2>
+    <p>Une fois satisfait de votre disposition, cliquez sur l'onglet "Configuration" > Sélectionnez "Modèles de mise en page" > Cliquez sur l'icône "+" > Entrez le nom du modèle > Confirmez.</p>
+    <p>Lors des futures importations, vous pourrez appliquer vos modèles enregistrés d'un seul clic.</p>
+
+    <h2>Difficulté d'alignement temporel ?</h2>
+    <p>Les vidéos prises avec des smartphones ou des caméras sportives peuvent être automatiquement alignées avec la ligne temporelle. Pour assurer cet alignement :</p>
+    <p>1. Ne découpez pas les vidéos exportées depuis des caméras sportives, car cela peut désynchroniser les temps d'enregistrement.</p>
+    <p>2. Lors de l'envoi ou du transfert des vidéos, choisissez l'option "Vidéo originale", car la compression peut effacer les métadonnées temporelles.</p>
+    <p>3. Évitez de renommer les fichiers vidéo. En cas d'absence des métadonnées, le nom du fichier peut être utilisé pour deviner le temps d'enregistrement.</p>
+    <p>4. Vérifiez les métadonnées depuis la galerie système. Si les temps ont été modifiés, restaurez-les aux valeurs originales.</p>
+    <p>Si l'alignement automatique échoue, vous pouvez aligner manuellement avec ces astuces :</p>
+    <p>1. Si vous connaissez précisément l'heure de capture, ajoutez un composant temporel au tableau de bord, puis ajustez l'outil d'alignement jusqu'à la correspondance.</p>
+    <p>2. Ajoutez des composants de vitesse, cadence ou puissance, puis mettez la vidéo en pause lorsque les pieds s'arrêtent ou quand vous entendez le cliquetis des roues. Ajustez ensuite l'outil d'alignement jusqu'à ce que la cadence ou la puissance atteigne 0.</p>
+    <p>3. Repérez des virages dans la vidéo. Mettez la vidéo en pause à ces endroits, puis ajustez l'outil jusqu'à ce que l'itinéraire montre le virage correspondant.</p>
+    <p>4. Repérez des montées ou descentes dans la vidéo. Mettez la vidéo en pause, puis ajustez l'outil pour faire correspondre les changements de pente.</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Velo Technologies | <a href="http://beian.miit.gov.cn/" target="_blank">粤ICP备2024319589号-1</a> | <a href="mailto:fily@veloxox.com">Contactez-nous</a></p>
+</footer>
+
+</body>
+</html>

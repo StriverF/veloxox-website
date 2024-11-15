@@ -29,16 +29,82 @@
         }
 
         .intro {
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
             padding: 50px 20px;
             background-color: #1C1C1C;
+            text-align: center;
+            flex-wrap: wrap; /* 允许换行，便于小屏幕适配 */
         }
 
-        .intro p {
+        .intro-text {
+            max-width: 50%;
+        }
+
+        .intro-text p {
             font-size: 1.2em;
-            max-width: 800px;
-            margin: 0 auto;
             line-height: 1.6;
+            margin: 0;
+        }
+
+        .download-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .app-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .app-icon img {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+        }
+
+        .app-icon span {
+            margin-top: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        .download-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .download-buttons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FFD700;
+            color: #1A1A1A;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            width: 140px;
+        }
+
+        .download-buttons a:hover {
+            background-color: #FFC107;
+        }
+
+        .download-buttons a img {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
         }
 
         .sections {
@@ -79,9 +145,21 @@
             color: #FFD700;
             text-decoration: none;
         }
+
         footer .record-number {
             color: #c1c1c1;
             text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .intro {
+                flex-direction: column; /* 在手机屏幕上，文案和下载模块上下排列 */
+            }
+
+            .intro-text {
+                max-width: 100%; /* 文案宽度适配手机屏幕 */
+                margin-bottom: 20px; /* 文案与下载模块之间的间距 */
+            }
         }
     </style>
 </head>
@@ -91,7 +169,25 @@
     </header>
 
     <section class="intro">
-        <p>Vélo，在法语中是自行车的常用词，这个词在法语使用国家非常普遍。不仅在法国，还包括其他说法语的国家和地区。维络科技主要从3个A方向给运动爱好者提供服务: Analytics、Adventure、AI</p>
+        <div class="intro-text">
+            <p>Vélo，在法语中是自行车的常用词，这个词在法语使用国家非常普遍。不仅在法国，还包括其他说法语的国家和地区。维络科技主要从3个A方向给运动爱好者提供服务: Analytics、Adventure、AI</p>
+        </div>
+        <div class="download-section">
+            <div class="app-icon">
+                <img src="https://cdn-app-icon2.pgyer.com/f/0/6/2/1/f06216a3daa5da8daa4cf448b3de0ab0?x-oss-process=image/resize,m_lfit,h_120,w_120/format,jpg" alt="App Icon">
+                <span>Velo Dash</span>
+            </div>
+            <div class="download-buttons">
+                <a href="https://apps.apple.com/us/app/velo-dash/id6737304738" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="iOS">
+                    <span>iOS 下载</span>
+                </a>
+                <a href="https://www.pgyer.com/pTVDjXGr" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" alt="Android">
+                    <span>Android 下载</span>
+                </a>
+            </div>
+        </div>
     </section>
 
     <section class="sections">
@@ -118,6 +214,7 @@
     </section>
 
     <footer>
+        <div>App备案号: 粤ICP备2024319589号-2A</div>
         <p>&copy; 2024 维络科技 | <a class="record-number" href="http://beian.miit.gov.cn/" target="_blank">粤ICP备2024319589号-1</a> | <a href="mailto:fily@veloxox.com">联系我们</a></p>
     </footer>
 </body>
