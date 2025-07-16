@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=icon href=/favicon.ico>
+    <meta name="description" content="深圳维络科技有限公司 - 引领数据驱动的骑行革命！推出的 Velo Dash App，提供专业的骑行数据分析和视频导出工具，支持 iOS 和 Android 平台免费下载。">
+    <meta name="keywords" content="运动社交, Velo Dash, Velo Dash 下载, Velo Dash iOS, Velo Dash Android, 骑行数据, fit 文件导入, 视频导出, 骑行工具 App 骑行数据仪表盘 给骑行视频添加数据仪表盘">
+    <meta name="author" content="深圳维络科技有限公司">
+    <title>维络科技 - 引领数据驱动的骑行革命</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #1A1A1A;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #FFD700;
+            margin: 0;
+        }
+
+        .intro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 50px 20px;
+            background-color: #1C1C1C;
+            text-align: center;
+            flex-wrap: wrap; /* 允许换行，便于小屏幕适配 */
+        }
+
+        .intro-text {
+            max-width: 50%;
+        }
+
+        .intro-text p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .download-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .download-section p {
+            font-size: 12px;
+            color: #c1c1c1;
+        }
+
+        .app-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .app-icon img {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+        }
+
+        .app-icon span {
+            margin-top: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        .download-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .download-buttons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FFD700;
+            color: #1A1A1A;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            width: 140px;
+        }
+
+        .download-buttons a:hover {
+            background-color: #FFC107;
+        }
+
+        .download-buttons a img {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+        }
+
+        .download-buttons .icon {
+            margin-right: 8px;
+        }
+
+        .sections {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .section {
+            background-color: #1E1E1E;
+            padding: 30px;
+            margin: 10px;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            color: #FFD700;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            padding: 20px;
+            background-color: #1A1A1A;
+            color: #999;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        footer .record-number {
+            color: #c1c1c1;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .intro {
+                flex-direction: column; /* 在手机屏幕上，文案和下载模块上下排列 */
+            }
+
+            .intro-text {
+                max-width: 100%; /* 文案宽度适配手机屏幕 */
+                margin-bottom: 20px; /* 文案与下载模块之间的间距 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>维络科技</h1>
+    </header>
+
+    <section class="intro">
+        <div class="intro-text">
+            <p>Vélo，在法语中是自行车的常用词，这个词在法语使用国家非常普遍。不仅在法国，还包括其他说法语的国家和地区。维罗科技主要从3个A方向给运动爱好者提供服务: Analytics、Adventure、AI</p>
+        </div>
+        <div class="download-section">
+            <div class="app-icon">
+                <img src="icons/velo-dash-1024.png" alt="App Icon">
+                <span>Velo Dash</span>
+            </div>
+            <div class="download-buttons">
+                <a href="https://apps.apple.com/us/app/velo-dash/id6737304738" target="_blank">
+                    <svg alt="iOS" t="1731823729870" class="icon" style="width: 2em;height: 2em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3564"><path d="M849.124 704.896c-1.04 3.158-17.3 59.873-57.25 118.191-34.578 50.306-70.333 101.019-126.803 101.91-55.533 0.975-73.303-33.136-136.707-33.136-63.324 0-83.23 32.245-135.713 34.111-54.255 2.221-96.004-54.951-130.712-105.011-70.935-102.55-125.553-290.6-52.301-416.626 36.04-63.055 100.82-103.136 171.364-104.231 53.161-1.005 103.74 36.012 136.029 36.012 33.171 0 94.357-44.791 158.906-38.09 27.026 1.152 102.622 11.299 151.328 81.892-3.832 2.607-90.452 53.724-89.487 157.76 1.302 125.597 110.174 166.79 111.346 167.218M633.697 230.75c29.108-35.506 48.235-84.314 43.203-132.785-41.56 1.63-92.197 27.6-122.292 62.897-26.609 30.794-50.062 80.362-43.52 128.27 46.177 2.805 93.657-24.182 122.609-58.382" p-id="3565" data-spm-anchor-id="a313x.search_index.0.i2.3dca3a81PkqTSD"></path></svg>
+                    <span>iOS 下载</span>
+                </a>
+            </div>
+            <p>
+                下载 Velo Dash App，体验专业的骑行数据管理工具。<br>
+                支持 Apple Health 和 fit 文件导入，关联运动设备账号获取数据。<br>
+                提供视频添加数据仪表盘及导出功能。
+            </p>
+        </div>
+    </section>
+
+    <section class="sections">
+        <div class="section">
+            <h2>Analytics（分析）</h2>
+            <p>通过数据分析来增强骑行体验，帮助骑行者提升性能，让数据为每一次骑行提供精确支持。</p>
+        </div>
+        <div class="section">
+            <h2>Adventure（探险）</h2>
+            <p>骑行不仅是运动，更是一场探险。我们助力骑行者探索未知，发现沿途的风景与惊喜， 并乐于分享。</p>
+        </div>
+        <div class="section">
+            <h2>AI（人工智能）</h2>
+            <p>利用最前沿的AI技术，优化和革新运动体验，打造智能化、个性化的运动服务。</p>
+        </div>
+    </section>
+
+    <section class="sections">
+        <div class="section">
+            <h2>使命与愿景</h2>
+            <p>维络科技致力于利用前沿智能技术，塑造运动领域最有趣的运动社交平台，最专业的运动软件相关支持。</p>
+            <p>节能环保的出行方式（骑行、跑步、游泳）加速世界向可持续能源的转变。</p>
+        </div>
+    </section>
+
+    <footer>
+        <div>App备案号: 粤ICP备2024319589号-2A</div>
+        <p>&copy; 2024 维络科技 | <a class="record-number" href="http://beian.miit.gov.cn/" target="_blank">粤ICP备2024319589号-1</a> | <a href="mailto:yinli@veloxox.com">联系我们</a></p>
+        <p>
+            <a href="https://www.veloxox.com/privacy-zh.html" target="_blank">隐私政策</a> |
+            <a href="https://www.veloxox.com/terms-zh.html" target="_blank">使用条款</a> |
+            <a href="https://www.veloxox.com/help-center-zh.html" target="_blank">帮助文档</a>
+        </p>
+    </footer>
+</body>
+</html>
